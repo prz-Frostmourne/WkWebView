@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p></p>
+    <div>
+        <button onclick="fn_open_camera();">拍照</button>
+    </div>
+    <hr/>
+    <br/>
+    <div>
+        <button onclick="fn_call();">打电话</button>
+    </div>
+    <a href="http://www.baidu.com">百度</a>
+<script>
+    
+function fn_call() {
+    var dict = {"name":"阳君", "qq":"937447974"};
+    
+    
+    
+    
+    window.webkit.messageHandlers.abc.postMessage(dict);
+}
+
+function fn_open_camera() {
+    var dict = {"name":"阳君啊", "qq":"111111"};
+    window.webkit.messageHandlers.qwe.postMessage(dict);
+}
+</script>
+</body>
+</html>
